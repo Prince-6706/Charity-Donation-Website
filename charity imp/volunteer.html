@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Volunteer Form</title>
+    <style>
+        /* css for volunteeer form */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.volunteercontainer {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #00b4d8, #90e0ef);
+    color: white;
+}
+
+.volunteercontainer p:first-child {
+    margin-bottom: 10px;
+}
+
+.formvolunteer {
+    background: white;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.formvolunteer p:first-child {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.formvolunteer p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.form-control, .control-file, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-control:focus, select:focus {
+    outline: none;
+    border-color: #00b4d8;
+    box-shadow: 0 0 5px rgba(0, 180, 216, 0.5);
+}
+
+textarea {
+    resize: none;
+}
+ 
+ 
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #00b4d8;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            background: white;
+            color: #00b4d8;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            border: 1px solid #00b4d8;
+            transition: all 0.3s ease;
+        }
+
+        .nav-buttons a:hover {
+            background: #00b4d8;
+            color: white;
+        }
+
+        /* Volunteer Section */
+        .volunteercontainer {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom, #00b4d8, #90e0ef);
+            color: white;
+        }
+
+        .volunteercontainer p:first-child {
+            margin-bottom: 10px;
+        }
+
+        /* Form Styles */
+        .formvolunteer {
+            background: white;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .formvolunteer p:first-child {
+            font-weight: bold;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .formvolunteer p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .form-control, .control-file, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-control:focus, select:focus {
+            outline: none;
+            border-color: #00b4d8;
+            box-shadow: 0 0 5px rgba(0, 180, 216, 0.5);
+        }
+
+        textarea {
+            resize: none;
+        }
+        
+
+        /* Button Styling */
+        .turquiosetowhite_btn {
+            background: #00b4d8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .turquiosetowhite_btn:hover {
+            background: white;
+            color: #00b4d8;
+            border: 1px solid #00b4d8;
+        }
+
+        /* Responsive Row */
+        .row {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            flex: 1;
+            min-width: 200px;
+        }
+    </style>
+    
+    
+</head>
+<body>
+<a href="/index.html"></a>
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <a href="/index2.html">Home</a>
+        <a href="javascript:history.back()">Back</a>
+    </div>
+
+    <!-- Volunteer Section -->
+    <div class="volunteercontainer">
+        <p style="padding-top:60px;font-weight:900; font-size: 60px;">Volunteer Yourself</p>
+        
+
+        <div class="formvolunteer">
+            <p style="font-weight:1200; font-size: 50px;">Become A Volunteer</p>
+            <p>It only takes a minute to set up a campaign. Decide what to do. Pick a name. Pick a photo. And just like
+                that, you'll be ready to start raising money. </p>
+            <br><br>
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class="col">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <select class="form-control">
+                            <option>Select</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <input type="file" class="control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <textarea class="form-control" rows="6" cols="1" placeholder="Enter your message"></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button class="turquiosetowhite_btn">Apply Now</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

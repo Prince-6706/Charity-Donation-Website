@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Charity Causes</title>
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.causes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cause {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cause:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cause img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cause-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.cause-content h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cause-content p {
+    color: #666;
+    font-size: 14px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cause {
+    animation: fadeIn 1s ease-in-out;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Donation Button Styles */
+.donate-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.donate-section h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.donate-section p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.donate-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.donate-button:hover {
+    background-color: #45a049;
+}
+nav {
+margin-top: 10px;
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+nav ul li {
+display: inline;
+}
+
+nav ul li a {
+text-decoration: none;
+color: white;
+font-weight: bold;
+transition: color 0.3s;
+}
+
+nav ul li a:hover {
+color: #ffd700;
+
+}
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #00b4d8;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    background: white;
+    color: #00b4d8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #00b4d8;
+    transition: all 0.3s ease;
+}
+
+.nav-buttons a:hover {
+    background: #00b4d8;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- <a href="/index.html"></a> -->
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <a href="/index2.html">Home</a>
+        <a href="javascript:history.back()">Back</a>
+    </div>
+
+    <header>
+        <h1>Our Major Causes</h1>
+        <p>Learn more about the causes we support</p>
+        
+    
+
+<main>
+    <section id="causes">
+       
+        <div class="causes">
+            <!-- Education Cause -->
+            <div class="cause">
+                <img src="images/Education-for-all-1024x571.jpg"alt="Education">
+                <div class="cause-content">
+                    <h3>Education for All</h3>
+                    <p>We provide educational resources and support to underprivileged children.</p>
+                </div>
+            </div>
+
+            <!-- Healthcare Cause -->
+            <div class="cause">
+                <img src="/images/050621_PR_covid-india_feat.jpg" alt="Healthcare">
+                <div class="cause-content">
+                    <h3>Healthcare Access</h3>
+                    <p>We offer healthcare services and medical aid to communities in need.</p>
+                </div>
+            </div>
+
+            <!-- Environmental Cause -->
+            <div class="cause">
+                <img src="/images/yamuna-polloution_efc902f4-7c4e-11e7-ba32-a280bea68af6.avif" alt="Environment">
+                <div class="cause-content">
+                    <h3>Environmental Protection</h3>
+                    <p>We work on projects aimed at preserving the environment and promoting sustainability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="donate-section">
+        <h2>Make a Donation</h2>
+        <p>Your support helps us make a real difference in the lives of those in need.</p>
+        <button class="donate-button"><a href="/donate.html">Donate Now</a></button>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Charity Organization. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

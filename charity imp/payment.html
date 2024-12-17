@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style3.css">
+    <title>Payment form</title>
+    <style>
+        /* General Styles */
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+    <h1>Payment Form</h1>
+    <p>Required fields are followed by *</p>
+    <h2>Contant Information</h2>
+    <p>Name: *<input type="text" name="name" required></p>
+   
+   
+    
+    <p>Email: * <input type="email" name="email" id="email"required></p>
+    <p>Pincode:* <input type="number" name="Pincode" id="Pincode"required></p>
+    <h2>Payment Information</h2>
+    <div id="card logo">
+        <img src="/images/mastercard.jpg" alt="" height="44px" style="border-radius: 50%;">
+        <img src="/images/visa.png" alt="" height="44px" style="border-radius: 50%;">
+        <img src="/images/Rupay.png" alt="" height="44px" style="border-radius: 50%;">
+        <img src="/images/upi.png" alt="" height="44px" style="border-radius: 50%;">
+
+    </div>
+    
+    <p>Card Type:*
+        <select name="card_type" id="card_type"required>
+        <option value="">"--Select a payment method--"</option>
+        <option value="visa">Visa</option>
+        <option value="rupay">Rupay</option>
+        <option value="mastercard">Mastercard</option>
+        <option value="UPI">UPI</option>
+        
+</select>
+    </p>
+
+    <p>
+        Card Number:* <input type="number" name="card number" id="card number"required>
+    </p>
+    <p>
+        Expiration Dates: *<input type="date" Name="exp_date" id="exp_date"required>
+    </p>
+    <p>CVV: *<input type="Password" name="CVV"required>
+    </p>
+    <input type="submit" value="Pay now">
+    
+
+
+   
+</form>   
+</body>
+</html>
